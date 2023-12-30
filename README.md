@@ -1,5 +1,7 @@
 # Internet Explorer Launcher
-绕过 “不再支持 Internet Explorer 11”，强制启动 Internet Explorer，并支持通过命令行参数指定 URL
+
+Bypass "Internet Explorer 11 is No Longer Supported" and launch it to use websites that requires it.
+绕过 “不再支持 Internet Explorer 11”，强制启动 IE11 以使用依赖于 IE 的网站
 
 针对 Windows 10  22H2 版本中，Internet Explorer 11 在卸载 Microsoft Edge 后，依旧无法启动，提示 “不再支持 Internet Explorer 11” 的折中解决方案
 
