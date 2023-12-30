@@ -9,10 +9,10 @@ iexplorerLauncher-console.exe [URL]
 ```
 若URL未指定，则使用`about:blank`作为缺省值
 
-**注意: 由于启动 Internet Explorer 11 需要添加 `-Embedded` 参数，而由于Internet Explorer 11 的离谱 Bug，`-Embedded` 会成为URL的一部分，为了避免对URL或query部分的影响，程序会在URL后加上 `?nope=` 或 `&nope=`**
+**注意: 由于启动 Internet Explorer 11 需要添加 `-Embedded` 参数，而由于Internet Explorer 11 的离谱 Bug，`-Embedded` 会成为URL的一部分，为了避免对目标文件或query部分的影响，程序会在URL后加上 `?nope=` 或 `&nope=`**
 
-## 设置为默认浏览器以间接使用Internet Explorer作为默认浏览器
-Internet Explorer 11 被作为默认浏览器调用时依旧拒绝启动，可以将此程序设置为默认“浏览器”，便可以间接使用IE。
+## 设置为默认浏览器以使用需要调用作为默认浏览器的 IE 的应用
+Internet Explorer 11 被作为默认浏览器调用时依旧拒绝启动，可以将此程序设置为默认浏览器，便可以间接启动 IE。
 
 ### 作为浏览器注册到 Windows
 将程序放置于 `C:\InternetExplorerLauncher\` 下，则可执行位置应为 `C:\InternetExplorerLauncher\iexploreLauncher.exe`，然后加载注册表文件 `RegisterAsABrowser.reg`，前往Windows设置 - 应用 - 默认应用，将浏览器改为 `Internet Explorer Launcher` 即可
