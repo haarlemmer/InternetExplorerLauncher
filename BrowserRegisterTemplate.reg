@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\RegisteredApplications]
+"Internet Explorer Launcher"="Software\Clients\StartMenuInternet\iexploreLauncher\Capabilities"
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher]
+@="Internet Explorer Launcher"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\Capabilities]
+"ApplicationDescription"="Internet Explorer Launcher"
+"ApplicationIcon"="C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe,0"
+"ApplicationName"="Internet Explorer Launcher"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\Capabilities\FileAssociations]
+; you can add additional filetypes like .pdf if your browser supports it
+".htm"="InternetExplorerLauncher"
+".html"="InternetExplorerLauncher"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\Capabilities\Startmenu]
+"StartMenuInternet"="iexploreLauncher"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\Capabilities\URLAssociations]
+; you can add additional protocols like mailto for example
+"http"="InternetExplorerLauncher"
+"https"="InternetExplorerLauncher"
+ [HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\DefaultIcon]
+@="C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe,0"
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\shell]
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\shell\open]
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\iexploreLauncher\shell\open\command]
+@="\"C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe\""
+
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher]
+@="InternetExplorer Handler"
+"AppUserModelId"="InternetExplorerLauncher"
+
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher\Application]
+"AppUserModelId"="InternetExplorerLauncher"
+"ApplicationIcon"="C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe,0"
+"ApplicationName"="Internet Explorer Launcher"
+"ApplicationDescription"="Start Internet Explorer in Windows 10 22H2."
+"ApplicationCompany"="hihaar"
+
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher\DefaultIcon]
+@="C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe,0"
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher\shell]
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher\shell\open]
+[HKEY_CURRENT_USER\Software\Classes\InternetExplorerLauncher\shell\open\command]
+; your browser might offer different arguments here - %1 opens just the argument given
+@="\"C:\\InternetExplorerLauncher\\iexplorerLauncher-console.exe\" %1"
